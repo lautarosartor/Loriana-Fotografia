@@ -1,0 +1,79 @@
+.seccion-testimonios {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    min-height: 80vh;
+}
+
+.test-izquierda {
+    background-image: url(../img/lori-test.jpg);
+    background-size: cover;
+    order: 1;
+    background-position: center;
+    width: 50%;
+    min-height: 60vh;
+}
+
+.container-parrafos {
+    font-size: 1.2em;
+    line-height: 1.7rem;
+    padding: 1rem;
+    color: rgba(127, 255, 212, 1);
+    text-shadow: 0 0 10px #000;
+    height: 100%;
+}
+
+.container-parrafos h3, .container-parrafos b {
+    text-align: center;
+    color: #fbf2d8;
+    text-shadow: 0 0 10px #000;
+}
+
+.container-parrafos p {
+    padding: 1.7rem;
+}
+
+.test-derecha {
+    order: 2;
+    width: 50%;
+    font-size: 1.2em;
+    line-height: 1.7rem;
+    text-align: center;
+    padding: 1rem 0;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fbf2d8b1;
+    color: #000;
+}
+
+.test-derecha p {
+    font-style: italic;
+    padding: 1.7rem;
+}
+
+.test-abajo {
+    order: 3;
+    background-color: rgba(127, 255, 212, .5);
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5%;
+    width: 100%;
+    font-size: 1.2em;
+    min-height: 15vh;
+    align-self: end;
+}
+
+@media only screen and (max-width: 860px) {
+    .test-izquierda {
+        width: 100%;
+    }
+
+    .test-derecha {
+        width: 100%;
+    }
+}

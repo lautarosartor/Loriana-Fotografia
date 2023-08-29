@@ -1,0 +1,79 @@
+.seccion-contact {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5%;
+    min-height: 50vh;
+}
+
+.seccion-contact .contact-izquierda {
+    order: 1;
+    width: 50%;
+    padding-left: 5%;
+    text-align: right;
+}
+
+.contact-izquierda p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    padding: 1rem;
+}
+
+.contact-izquierda p:first-child {
+    font-size: 1.7rem;
+    padding-right: 1rem;
+    padding-top: 0;
+}
+
+.seccion-contact .form {
+    order: 2;
+    width: 50%;
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+    padding: 0 5%;
+}
+
+.form .form__div {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    max-width: 400px;
+    outline: 2px solid red;
+}
+
+textarea {
+    overflow: auto;
+    resize: none;
+    font-size: 1rem;
+    padding: 1%;
+    min-height: 100px;
+}
+
+.form [type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 860px) {
+    .seccion-contact {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .seccion-contact .contact-izquierda {
+        width: 100%;
+        text-align: center;
+        padding: 10%;
+    }
+
+    .seccion-contact .form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        outline: 2px solid red;
+    }
+}
