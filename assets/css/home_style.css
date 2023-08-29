@@ -98,7 +98,6 @@
     .seccion-inicio .inicio-izquierda {
         width: 100vw;
         display: block;
-        outline: 2px solid red;
     }
 
     .container__img img {
